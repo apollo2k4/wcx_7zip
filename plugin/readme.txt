@@ -6,7 +6,7 @@
 //     2009 Dmitry Efimenko <tbbcmrjytv@gmail.com>
 //     2009 Alexandr Popov <Sax0n0xaS@gmail.com>
 //     2010 Cristian Adam <cristian.adam@gmail.com>
-//     2011 dllee <dllee.tw@gmail.com>
+//     2011-2016 dllee <dllee.tw@gmail.com>
 //
 // This program is free software; you can redistribute it and/or
 // modify it under the terms of the GNU General Lesser Public License
@@ -33,16 +33,14 @@ auto-installer of Total Commander 6.5 or higher.
 2. Features
 -----------
  - File listing
- - Extraction & compression
-   (7-Zip 9.x compatible methods)
+ - Extraction & compression (7-Zip 9.x compatible methods)
  - 7zAES file decryption/encryption using password
  - CRC test and detection
  - Multi-language support, langpacks included:
    Chinese(BIG5), Czech, Danish, English (built-in), German, Lithuanian, Russian.
  - SFX support: put 7z.sfx, 7zC.sfx or 7zCon.sfx into 7zip.wcx folder
 		and use *.exe filename to create 7zip SFX archive.
-	 (additional SFX modules can be found here http://7zsfx.info/en/
-	 if you need configuration file for the SFX module, then put config.txt to the 7zip.wcx folder)
+	 (if you need configuration file for the SFX module, then put config.txt to the 7zip.wcx folder)
  - set 7z datetime to newest file.
  - Extraction & compression files in background.
 
@@ -66,6 +64,12 @@ Note for translators: On OS supporting unicode codepage= setting is crucial as
 
 6. History
 ----------
+0.7.6.6: 2016-12-13 dllee
+ - New:  Delta Decoder Filter for decompress
+
+0.7.6.5a: 2011-10-24 Christian Ghisler
+ - New: Recompiled for 64-bit Windows
+
 0.7.6.5: 2011-06-29 dllee
  - New: encrypt password before saving to 7zip.ini file.
         remark: the maximum password size is 64 unicode characters.

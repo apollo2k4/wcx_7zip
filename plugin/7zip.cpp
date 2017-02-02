@@ -4,7 +4,7 @@
 //			 (c) 2009 Dmitry Efimenko <tbbcmrjytv@gmail.com>
 //			 (c) 2009 Alexandr Popov <Sax0n0xaS@gmail.com>
 //			 (c) 2010 Cristian Adam <cristian.adam@gmail.com>
-//			 (c) 2011 dllee <dllee.tw@gmail.com>
+//			 (c) 2011-2016 dllee <dllee.tw@gmail.com>
 //
 // This program is free software; you can redistribute it and/or
 // modify it under the terms of the GNU General Lesser Public License
@@ -30,7 +30,7 @@ LPWSTR wAuthors=L"\xA9 2004-2007 Adam Strzelecki <ono@java.pl>\r\n"		// \xA9 is 
 L"    2009 Dmitry (Duny) Efimenko <tbbcmrjytv@gmail.com>\r\n"
 L"    2009 Alexandr (Sax0n) Popov <Sax0n0xaS@gmail.com>\r\n"
 L"    2010 Cristian Adam <cristian.adam@gmail.com>\r\n"
-L"    2011 dllee <dllee.tw@gmail.com>\r\n"
+L"    2011-2016 dllee <dllee.tw@gmail.com>\r\n"
 L"This software is published under LGPL license.";
 
 HINSTANCE g_hInstance = NULL;

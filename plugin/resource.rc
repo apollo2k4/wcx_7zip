@@ -60,7 +60,7 @@ FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT,0,0,367,48
     CONTROL         105,IDI_ICON,"Static",SS_BITMAP | 0x20,6,7,21,15,WS_EX_TRANSPARENT
-    LTEXT           "7Zip Plugin 0.7.6.5",IDC_TITLE,36,3,331,8
+    LTEXT           "7Zip Plugin 0.7.6.6",IDC_TITLE,36,3,331,8
     GROUPBOX        "Compression",IDC_GRP_COMP,8,53,163,114
     RTEXT           "Compression level:",IDC_LBL_COMP_LEVEL,18,67,75,10
     COMBOBOX        IDC_COMP_LEVEL,99,66,64,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
@@ -134,8 +134,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 0,7,6,5
- PRODUCTVERSION 0,7,6,5
+ FILEVERSION 0,7,6,6
+ PRODUCTVERSION 0,7,6,6
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -153,12 +153,12 @@ BEGIN
             VALUE "Comments", "7zip plugin for Total Commander (LGPL)"
             VALUE "CompanyName", "Adam Strzelecki; Dmitry Efimenko; Alexandr Popov; Cristian Adam; dllee"
             VALUE "FileDescription", "7zip plugin for Total Commander (LGPL)"
-            VALUE "FileVersion", "0.7.6.5"
+            VALUE "FileVersion", "0.7.6.6"
             VALUE "InternalName", "7zwcx"
-            VALUE "LegalCopyright", "Copyright © 2004-2007 Adam Strzelecki; © 2009 Dmitry Efimenko; © 2009 Alexandr Popov; © 2010 Cristian Adam ; © 2011 dllee"
-            VALUE "OriginalFilename", "7z.wcx"
+            VALUE "LegalCopyright", "Copyright \xA92004-2007 Adam Strzelecki; \xA92009 Dmitry Efimenko; \xA92009 Alexandr Popov; \xA92010 Cristian Adam ; ?2011-2016 dllee"
+            VALUE "OriginalFilename", "7zip.wcx"
             VALUE "ProductName", "7zip plugin for Total Commander (LGPL)"
-            VALUE "ProductVersion", "0.7.6.5"
+            VALUE "ProductVersion", "0.7.6.6"
         END
     END
     BLOCK "VarFileInfo"

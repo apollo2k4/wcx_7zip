@@ -1,0 +1,229 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include <winres.h>
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "7zip.bmp"
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Neutral) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "7zip.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG DIALOGEX 0, 0, 370, 254
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "7Zip Configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT,0,0,367,48
+    CONTROL         105,IDI_ICON,"Static",SS_BITMAP | 0x20,6,7,21,15,WS_EX_TRANSPARENT
+    LTEXT           "7Zip Plugin 0.7.6.2",IDC_TITLE,36,3,331,8
+    GROUPBOX        "Compression",IDC_GRP_COMP,8,53,163,84
+    RTEXT           "Compression level:",IDC_LBL_COMP_LEVEL,18,69,75,10
+    COMBOBOX        IDC_COMP_LEVEL,99,66,64,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Compression method:",IDC_LBL_COMP_METHOD,18,85,75,10
+    COMBOBOX        IDC_COMP_METHOD,99,82,64,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Dictionary size:",IDC_LBL_DICT_SIZE,18,102,75,10
+    COMBOBOX        IDC_DICT_SIZE,99,99,64,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Word size:",IDC_LBL_WORD_SIZE,18,121,75,10
+    COMBOBOX        IDC_WORD_SIZE,99,116,64,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Password",IDC_GRP_PASSWORD,177,53,179,59
+    RTEXT           "Use password:",IDC_LBL_PASSWORD,183,65,54,10
+    EDITTEXT        IDC_PASSWORD,240,63,100,12,ES_AUTOHSCROLL
+    CONTROL         "Show password in plain text",IDC_SHOW_PASSWORD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,186,77,157,9
+    CONTROL         "Keep using this password more than once",IDC_USE_NEXT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,186,87,157,9
+    CONTROL         "Encrypt file header and file names",IDC_ENCRYPT_HEADER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,186,97,159,9
+    PUSHBUTTON      "x",IDC_RESET_SFX_ICON,183,124,10,10
+    ICON            IDI_ICON,IDC_SFX_ICON,195,116,20,20,SS_NOTIFY,WS_EX_TRANSPARENT
+    RTEXT           "SFX:",IDC_STATIC,224,122,15,10
+    COMBOBOX        IDC_SFX_MODULE,246,120,110,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Solid Block size:",IDC_LBL_SOLID_BLOCK,1,149,70,10
+    COMBOBOX        IDC_SOLID_BLOCK_SIZE,76,148,93,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Memory usage for Compressing:",IDC_LBL_MEMORY_FOR_COMPRESSING,177,139,150,8
+    RTEXT           "?",IDC_MEMORY_FOR_COMPRESSING,333,139,30,8
+    LTEXT           "Memory usage for Decompressing:",IDC_LBL_MEMORY_FOR_DECOMPRESSING,177,152,150,8
+    RTEXT           "?",IDC_MEMORY_FOR_DECOMPRESSING,333,152,30,8
+    RTEXT           "Number of CPU threads:",IDC_LBL_NUM_THREADS,1,170,91,10
+    COMBOBOX        IDC_NUM_THREADS,99,169,64,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "/4",IDC_MAX_THREADS,165,171,27,8
+    PUSHBUTTON      ">",IDC_TOGGLE_EXT_SETTINGS,206,168,15,14
+    GROUPBOX        "File attributes to store when packing",IDC_LBL_FILE_ATTRIBUTES_FOR_PACKING,8,184,359,52
+    GROUPBOX        "File times",IDC_LBL_FILE_TIMES,15,194,104,39
+    CONTROL         "Create",IDC_LBL_SAVE_CREATE_TIME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,207,96,10
+    CONTROL         "Access",IDC_LBL_SAVE_ACCESS_TIME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,221,94,10
+    PUSHBUTTON      "x",IDC_RESET_FILE_TIMES,121,221,10,10
+    GROUPBOX        "File attributes",IDC_LBL_FILE_ATTRIBUTES,136,194,220,39
+    CONTROL         "Read only",IDC_LBL_SAVE_READONLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,143,207,100,10
+    CONTROL         "Hidden",IDC_LBL_SAVE_HIDDEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,143,221,100,10
+    CONTROL         "System",IDC_LBL_SAVE_SYSTEM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,251,207,100,10
+    CONTROL         "Archive",IDC_LBL_SAVE_ARCHIVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,251,221,100,10
+    PUSHBUTTON      "x",IDC_RESET_FILE_ATTRIBUTES,357,221,10,10
+    DEFPUSHBUTTON   "OK",IDOK,261,168,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,316,168,50,14
+    CONTROL         "set 7z datetime to newest file",IDC_DATE_TO_NEWEST,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,239,229,10
+    CONTROL         "reorder directory list",IDC_FIX_DIR_DATETIME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,251,239,106,10
+    EDITTEXT        IDC_AUTHORS,35,12,332,35,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | NOT WS_BORDER | WS_VSCROLL | NOT WS_TABSTOP
+END
+
+IDD_PASSWORD DIALOGEX 0, 0, 202, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "7Zip Password"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT,0,0,201,32
+    CONTROL         105,IDI_ICON,"Static",SS_BITMAP | 0x20,7,7,21,15,WS_EX_TRANSPARENT
+    LTEXT           "7Zip archive is password protected",IDC_TITLE,35,5,156,8
+    LTEXT           "Please enter password for archive",IDC_SUBTITLE,42,17,152,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,32,201,1
+    RTEXT           "Password:",IDC_LBL_PASSWORD,7,46,50,10
+    EDITTEXT        IDC_PASSWORD,59,44,135,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,90,66,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,145,66,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,7,6,1
+ PRODUCTVERSION 0,7,6,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "7zip plugin for Total Commander (LGPL)"
+            VALUE "CompanyName", "Adam Strzelecki; Dmitry Efimenko; Alexandr Popov; Cristian Adam; dllee"
+            VALUE "FileDescription", "7zip plugin for Total Commander (LGPL)"
+            VALUE "FileVersion", "0.7.6.1"
+            VALUE "InternalName", "7zwcx"
+            VALUE "LegalCopyright", "Copyright ?2004-2007 Adam Strzelecki; ?2009 Dmitry Efimenko; ?2009 Alexandr Popov; ?2010 Cristian Adam ; ?2011 dllee"
+            VALUE "OriginalFilename", "7z.wcx"
+            VALUE "ProductName", "7zip plugin for Total Commander (LGPL)"
+            VALUE "ProductVersion", "0.7.6.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONFIG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 367
+        BOTTOMMARGIN, 251
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (Neutral) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Ireland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENI)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_EIRE
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include <winres.h>\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (Ireland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

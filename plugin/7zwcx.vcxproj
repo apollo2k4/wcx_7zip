@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|x64">
+      <Configuration>Template</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{382457DD-87A3-4213-BB70-3D26002F8DFF}</ProjectGuid>
+    <RootNamespace>My7zwcx</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>Windows7.1SDK</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>Windows7.1SDK</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\7z_src\CPP;..\7z_src\C;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;MY7ZWCX_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_USE_32BIT_TIME_T;COMPRESS_MT;COMPRESS_LZMA;COMPRESS_BCJ_X86;COMPRESS_BCJ2;COMPRESS_PPMD;COMPRESS_BZIP2;COMPRESS_DEFLATE;COMPRESS_DEFLATE64;COMPRESS_COPY;COMPRESS_BZIP2_MT;COMPRESS_MF_MT;EXCLUDE_COM;CRYPTO_7ZAES;CRYPTO_AES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>..\bin\7zip.wcx</OutputFile>
+      <ModuleDefinitionFile>7zip.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\7z_src\CPP;..\7z_src\C;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;MY7ZWCX_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;COMPRESS_MT;COMPRESS_LZMA;COMPRESS_BCJ_X86;COMPRESS_BCJ2;COMPRESS_PPMD;COMPRESS_BZIP2;COMPRESS_DEFLATE;COMPRESS_DEFLATE64;COMPRESS_COPY;COMPRESS_BZIP2_MT;COMPRESS_MF_MT;EXCLUDE_COM;CRYPTO_7ZAES;CRYPTO_AES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>..\bin\7zip.wcx64</OutputFile>
+      <ModuleDefinitionFile>7zip.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\7z_src\CPP;..\7z_src\C;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;MY7ZWCX_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_USE_32BIT_TIME_T;COMPRESS_MT;COMPRESS_LZMA;COMPRESS_BCJ_X86;COMPRESS_BCJ2;COMPRESS_PPMD;COMPRESS_BZIP2;COMPRESS_DEFLATE;COMPRESS_DEFLATE64;COMPRESS_COPY;COMPRESS_BZIP2_MT;EXCLUDE_COM;CRYPTO_7ZAES;CRYPTO_AES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>..\bin\7zipD.wcx</OutputFile>
+      <ModuleDefinitionFile>7zip.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\7z_src\CPP;..\7z_src\C;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;MY7ZWCX_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;COMPRESS_MT;COMPRESS_LZMA;COMPRESS_BCJ_X86;COMPRESS_BCJ2;COMPRESS_PPMD;COMPRESS_BZIP2;COMPRESS_DEFLATE;COMPRESS_DEFLATE64;COMPRESS_COPY;COMPRESS_BZIP2_MT;EXCLUDE_COM;CRYPTO_7ZAES;CRYPTO_AES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>..\bin\7zipD.wcx64</OutputFile>
+      <ModuleDefinitionFile>7zip.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\DeltaFilter.cpp" />
+    <ClCompile Include="7zip.cpp" />
+    <ClCompile Include="ConfigureDlg.cpp" />
+    <ClCompile Include="ICO.cpp" />
+    <ClCompile Include="PickIconDialog.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="wildcard.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Crypto\7zAes.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Crypto\7zAesRegister.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Archive\7z\7zDecode.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Archive\7z\7zEncode.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Archive\7z\7zFolderInStream.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Archive\7z\7zHeader.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Archive\7z\7zIn.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Archive\7z\7zOut.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Archive\7z\7zSpecStream.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Archive\7z\7zUpdate.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\Bcj2Coder.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\BcJ2Register.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\BcjCoder.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\BcjRegister.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\BitlDecoder.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\BranchCoder.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\BranchMisc.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\BranchRegister.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\ByteSwap.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\BZip2CRC.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\BZip2Decoder.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\BZip2Encoder.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\BZip2Register.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Archive\Common\CoderMixer2.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Archive\Common\CoderMixer2MT.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\CopyCoder.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\CopyRegister.cpp" />
+    <ClCompile Include="..\7z_src\CPP\Common\CRC.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Common\CreateCoder.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Archive\Common\CrossThreadProgress.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Common\CWrappers.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\Deflate64Register.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\DeflateDecoder.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\DeflateEncoder.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\DeflateRegister.cpp" />
+    <ClCompile Include="..\7z_src\CPP\Windows\DLL.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Archive\Common\DummyOutStream.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\Windows\FileDir.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\Windows\FileFind.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\Windows\FileIO.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Common\FileStreams.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Common\FilterCoder.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Crypto\HmacSha1.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Common\InBuffer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Common\InOutTempBuffer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Archive\Common\InStreamWithCRC.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Archive\Common\ItemNameUtils.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Common\LimitedStreams.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Common\LockedStream.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\LzhDecoder.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\Lzma2Decoder.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\Lzma2Encoder.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\Lzma2Register.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\LZMADecoder.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\LZMAEncoder.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\LZMARegister.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\LZOutWindow.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Common\MethodProps.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Archive\Common\MultiStream.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Crypto\MyAES.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\Common\MyString.cpp" />
+    <ClCompile Include="..\7z_src\CPP\Common\MyVector.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Common\OutBuffer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Archive\Common\OutStreamWithCRC.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\PPMDDecoder.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\PPMDEncoder.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Compress\PPMDRegister.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Common\ProgressUtils.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\Windows\PropVariant.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Crypto\RandGen.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Crypto\Sha1.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Common\StreamBinder.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Common\StreamObjects.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\7zip\Common\StreamUtils.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\Common\StringConvert.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\Windows\Synchronization.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\CPP\Windows\System.cpp" />
+    <ClCompile Include="..\7z_src\CPP\7zip\Common\VirtThread.cpp" />
+    <ClCompile Include="..\7z_src\C\7zAlloc.c" />
+    <ClCompile Include="..\7z_src\C\7zBuf.c" />
+    <ClCompile Include="..\7z_src\C\7zBuf2.c" />
+    <ClCompile Include="..\7z_src\C\7zCrc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\C\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\C\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\C\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\C\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\C\7zCrcOpt.c" />
+    <ClCompile Include="..\7z_src\C\7zDec.c" />
+    <ClCompile Include="..\7z_src\C\7zFile.c" />
+    <ClCompile Include="..\7z_src\C\7zIn.c" />
+    <ClCompile Include="..\7z_src\C\7zStream.c" />
+    <ClCompile Include="..\7z_src\C\Aes.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\CPP\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\CPP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\C\AesOpt.c" />
+    <ClCompile Include="..\7z_src\C\Alloc.c" />
+    <ClCompile Include="..\7z_src\C\Bcj2.c" />
+    <ClCompile Include="..\7z_src\C\Bra.c" />
+    <ClCompile Include="..\7z_src\C\Bra86.c" />
+    <ClCompile Include="..\7z_src\C\BraIA64.c" />
+    <ClCompile Include="..\7z_src\C\BwtSort.c" />
+    <ClCompile Include="..\7z_src\C\CpuArch.c" />
+    <ClCompile Include="..\7z_src\C\Delta.c" />
+    <ClCompile Include="..\7z_src\C\HuffEnc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\C\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\C\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\C\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\C\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\C\LzFind.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\C\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\C\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\C\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\C\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\C\LzFindMt.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\C\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\C\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\C\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\C\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\C\Lzma2Dec.c" />
+    <ClCompile Include="..\7z_src\C\Lzma2Enc.c" />
+    <ClCompile Include="..\7z_src\C\Lzma86Dec.c" />
+    <ClCompile Include="..\7z_src\C\Lzma86Enc.c" />
+    <ClCompile Include="..\7z_src\C\LzmaDec.c" />
+    <ClCompile Include="..\7z_src\C\LzmaEnc.c" />
+    <ClCompile Include="..\7z_src\C\LzmaLib.c" />
+    <ClCompile Include="..\7z_src\C\MtCoder.c" />
+    <ClCompile Include="..\7z_src\C\Ppmd7.c" />
+    <ClCompile Include="..\7z_src\C\Ppmd7Dec.c" />
+    <ClCompile Include="..\7z_src\C\Ppmd7Enc.c" />
+    <ClCompile Include="..\7z_src\C\Ppmd8.c" />
+    <ClCompile Include="..\7z_src\C\Ppmd8Dec.c" />
+    <ClCompile Include="..\7z_src\C\Ppmd8Enc.c" />
+    <ClCompile Include="..\7z_src\C\Sha256.c" />
+    <ClCompile Include="..\7z_src\C\Sort.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\C\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\C\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\C\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\C\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\C\Threads.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)7z\C\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)7z\C\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)7z\C\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)7z\C\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\7z_src\C\Xz.c" />
+    <ClCompile Include="..\7z_src\C\XzCrc64.c" />
+    <ClCompile Include="..\7z_src\C\XzDec.c" />
+    <ClCompile Include="..\7z_src\C\XzEnc.c" />
+    <ClCompile Include="..\7z_src\C\XzIn.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="7zip.def" />
+    <None Include="7zip.ico" />
+    <None Include="reset.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\7z_src\CPP\7zip\Common\CWrappers.h" />
+    <ClInclude Include="..\7z_src\CPP\7zip\Archive\Lzh\LzhCRC.h" />
+    <ClInclude Include="..\7z_src\CPP\7zip\Compress\LzhDecoder.h" />
+    <ClInclude Include="..\7z_src\CPP\7zip\Compress\Lzma2Decoder.h" />
+    <ClInclude Include="..\7z_src\CPP\7zip\Compress\Lzma2Encoder.h" />
+    <ClInclude Include="..\7z_src\CPP\7zip\Compress\LzmaDecoder.h" />
+    <ClInclude Include="..\7z_src\CPP\7zip\Compress\LzmaEncoder.h" />
+    <ClInclude Include="..\7z_src\C\7z.h" />
+    <ClInclude Include="..\7z_src\C\7zAlloc.h" />
+    <ClInclude Include="..\7z_src\C\7zBuf.h" />
+    <ClInclude Include="..\7z_src\C\7zCrc.h" />
+    <ClInclude Include="..\7z_src\C\7zFile.h" />
+    <ClInclude Include="..\7z_src\C\7zVersion.h" />
+    <ClInclude Include="..\7z_src\C\Aes.h" />
+    <ClInclude Include="..\7z_src\C\Alloc.h" />
+    <ClInclude Include="..\7z_src\C\Bcj2.h" />
+    <ClCompile Include="..\7z_src\C\Bra.h" />
+    <ClInclude Include="..\7z_src\C\BwtSort.h" />
+    <ClInclude Include="..\7z_src\C\CpuArch.h" />
+    <ClInclude Include="..\7z_src\C\Delta.h" />
+    <ClInclude Include="..\7z_src\C\HuffEnc.h" />
+    <ClInclude Include="..\7z_src\C\LzFind.h" />
+    <ClInclude Include="..\7z_src\C\LzFindMt.h" />
+    <ClInclude Include="..\7z_src\C\LzHash.h" />
+    <ClInclude Include="..\7z_src\C\Lzma2Dec.h" />
+    <ClInclude Include="..\7z_src\C\Lzma2Enc.h" />
+    <ClInclude Include="..\7z_src\C\Lzma86.h" />
+    <ClInclude Include="..\7z_src\C\LzmaDec.h" />
+    <ClInclude Include="..\7z_src\C\LzmaEnc.h" />
+    <ClInclude Include="..\7z_src\C\LzmaLib.h" />
+    <ClInclude Include="..\7z_src\C\MtCoder.h" />
+    <ClInclude Include="..\7z_src\C\Ppmd.h" />
+    <ClInclude Include="..\7z_src\C\Ppmd7.h" />
+    <ClInclude Include="..\7z_src\C\Ppmd8.h" />
+    <ClInclude Include="..\7z_src\C\RotateDefs.h" />
+    <ClInclude Include="..\7z_src\C\Sha256.h" />
+    <ClInclude Include="..\7z_src\C\Sort.h" />
+    <ClInclude Include="..\7z_src\C\Threads.h" />
+    <ClInclude Include="..\7z_src\C\Types.h" />
+    <ClInclude Include="..\7z_src\C\Xz.h" />
+    <ClInclude Include="..\7z_src\C\XzCrc64.h" />
+    <ClInclude Include="..\7z_src\C\XzEnc.h" />
+    <ClInclude Include="7zip.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="wcxhead.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="resource.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
