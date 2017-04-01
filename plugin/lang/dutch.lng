@@ -1,0 +1,66 @@
+; Author: René
+; bmom43@hotmail.com
+; Versie 0.7.6.5
+
+[lang]
+codepage=1252
+
+0=7Zip plugins
+
+900=Opslaan
+901=Snelste
+903=Snel
+905=Normaal
+907=Maximaal
+909=Ultra
+
+101=vast
+100=Niet vast
+
+102=Niets gevonden
+
+103=Het bestand wordt door een ander programma gebruikt.
+104=De verpakte bestand kan digitale handtekening bevatten!\nBijwerken zal de handtekening informatie vernietigen.\nWil je nog steeds dit ingepakte bestand bijwerken?
+
+1000=7Zip configuratie
+2000=7Zip wachtwoord
+
+1001=OK
+1002=Annuleren
+1108=Gebruik dit wachtwoord meer dan een keer
+1109=Versleutel bestandsstroom en bestandsnamen
+1110=Toon het wachtwoord in platte tekst
+1111=Compact archief maken (een stroom voor alle bestanden)
+1112=Compressie
+1113=Compressie niveau:
+1114=Compressie methode:
+115=kNumPassages:
+1115=Woordenboek grootte:
+1116=Woord grootte:
+1117=Wachtwoord
+1118=Gebruik wachtwoord:
+1123=Aantal CPU instructiestromen (threads)
+1124=Geheugengebruik voor comprimeren:
+1125=Geheugengebruik voor decomprimeren:
+1126=Vaste blokgrootte:
+
+1127=Op te slaan bestandsattributen bij het inpakken
+1128=Bestand keren
+1129=Maken
+1130=Toegang
+1131=Wijzigen
+
+1132=Bestand attributen
+1133=Alleen lezen
+1134=Verborgen
+1135=Systeem
+1136=Archief
+
+2001=OK
+2002=Annuleren
+2101=7Zip archief is versleuteld
+2102=Voer a.u.b. het wachtwoord in
+2118=Wachtwoord:
+
+2026=Zet 7z datum/tijd conform nieuwste bestand
+2027=Herordenen mappenlijst
